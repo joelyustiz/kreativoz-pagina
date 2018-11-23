@@ -1,0 +1,20 @@
+.Footer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0 20px;
+    height: 120px;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 1);
+    color: #f2f2f2;
+}
+
+@media screen and (max-width: 700px) {
+    .Footer {
+        grid-template: repeat(5, auto) / auto ;
+        grid-gap: 15px 0;
+        padding:  20px 0;
+        height: auto;
+    }
+}

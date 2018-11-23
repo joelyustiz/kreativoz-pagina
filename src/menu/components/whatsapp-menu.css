@@ -1,0 +1,25 @@
+.Whatsapp-menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    align-items: center;
+}
+
+.Whatsapp-menu > a {
+    color: #424242;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+} 
+
+.icon-whatsapp {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .Whatsapp-menu {
+        display: inline;
+    }
+}
+

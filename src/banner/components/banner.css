@@ -1,0 +1,22 @@
+.Banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "BannerConent .";
+    height: calc(100vh - 90px);
+    min-height: 500px;
+    max-height: 700px;
+    background-color: linear-gradient(#3D3B3C, #999ca1 );
+    background-image: url("../../../images/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+@media screen and (max-width:425px){
+    .Banner {
+        background-position: 68%;
+        grid-template-columns: 1fr;
+    }    
+}
+

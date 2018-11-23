@@ -1,0 +1,45 @@
+.input {
+    background: #f2f2f2;
+    padding: 4% ;
+    font-size: 20px;
+    font-family: Arial;
+    width: 80%;
+    border-radius: 10px;
+    border:none;
+    outline: 0;
+    transition: .2s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+}
+
+.error-input{
+    border: rgba(255, 0, 0, 1) 1px solid;
+}
+
+.input:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+  }
+
+.input-error{
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 7px;
+    margin-top: 2px;
+    text-align: center;
+  }
+.input-label {
+      font-weight: 600;
+}
+
+.Input-container {
+    display: grid;
+    justify-items: center;
+    grid-gap: 4px 0;
+}
+
+@media screen and (max-width: 320px) {
+      .input {
+          width: 85%;
+      }
+}

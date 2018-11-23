@@ -1,0 +1,15 @@
+.Menu-dropdown {
+    color: #424242;
+    font-size: 2.5rem;
+    font-weight: 100;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+   .Menu-dropdown {
+       display: grid;
+       align-content: center;
+       margin-left: 40px;
+   } 
+}

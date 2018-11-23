@@ -1,0 +1,16 @@
+.Menu-content-button {
+  background: #d91e43;
+  color: white;
+  box-sizing: border-box;
+  padding: 4px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d91e43;
+  display: grid;
+  text-decoration: none;
+  align-content: center;
+      
+}

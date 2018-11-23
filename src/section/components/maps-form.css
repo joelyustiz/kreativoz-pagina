@@ -1,0 +1,29 @@
+.Maps-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:  50px 0;
+}
+.Ubicacion {
+    width: 92%;
+    height: 92%;
+    padding: 2%
+}
+@media screen  and (max-width: 768px) {
+    .Maps-form {
+        grid-template-columns: 1fr;
+        padding: 0 ;
+    }
+    .Maps-close {
+        display: none;
+    }
+}
+@media screen and (max-width:375px){
+    .Maps-form {
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width:769px){
+    .Maps-form {
+        grid-gap: 0 20px;
+    }
+}

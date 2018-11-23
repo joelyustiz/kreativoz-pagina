@@ -1,0 +1,88 @@
+.Formsy {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas: "formnombre formtelefono formcorreo" 
+                         "formempresa formcargo formcotizacion" 
+                         "formcomentanos formcomentanos formcomentanos"
+                         " . . formbutton";
+    grid-gap: 20px 2px;
+}
+.btn-form{
+  background: #d91e43;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d91e43;
+  display: grid;
+  text-decoration: none;
+  align-content: center;
+  /* max-height: 90%; */
+  margin: 3px 0;
+}
+.btn-disable {
+  background: #f14f70;
+  border-bottom: 1px solid #f14f70;
+}
+.Formsy div:nth-child(1) {
+    grid-area: formnombre;
+}
+
+.Formsy div:nth-child(2) {
+  grid-area: formtelefono;
+}
+.Formsy div:nth-child(3) {
+  grid-area: formcorreo;
+}
+
+.Formsy div:nth-child(4) {
+  grid-area: formempresa;
+}
+
+.Formsy div:nth-child(5) {
+  grid-area: formcargo;
+}
+
+.Formsy div:nth-child(6) {
+  grid-area: formcotizacion;
+}
+
+.Formsy div:nth-child(7) {
+  grid-area: formcomentanos;
+}
+
+.Formsy button:nth-child(8) {
+  grid-area: formbutton;
+}
+
+@media screen and (max-width: 768px) {
+    .Formsy {
+      
+        grid-template-areas: "formnombre formtelefono formcorreo" 
+        "formempresa formcargo formcotizacion" 
+        "formcomentanos formcomentanos formcomentanos"
+        "formbutton  formbutton formbutton";
+    }
+    .btn-form {
+        width: 70%;
+        margin: 5px  auto 0 auto;
+    }
+}
+@media screen and (max-width: 425px) {
+  .Formsy {
+    grid-template-columns: 1fr 1fr;
+      grid-template-areas: "formnombre formtelefono" 
+                           "formcorreo formempresa" 
+                           "formcargo formcotizacion"
+                           "formcomentanos formcomentanos"
+                           "formbutton  formbutton ";
+
+  }
+ 
+}

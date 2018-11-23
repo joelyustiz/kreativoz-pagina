@@ -1,0 +1,20 @@
+.Footer-link {
+    color: #f2f2f2;
+}
+
+.Footer-link:before {
+    content: '/       ';
+    color: #666666;
+    left: -3px;
+}
+.Footer-link:first-child::before{
+    content: "";
+}
+@media screen and (max-width: 700px) {
+    .Footer-link{
+        text-align: center;
+    }
+    .Footer-link::before {
+        content: "";
+    }
+}

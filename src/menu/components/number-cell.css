@@ -1,0 +1,26 @@
+.NumberCell {
+    display: grid;
+    grid-gap: 2px;
+}
+
+.NumberCell > div > a {
+    color: #424242;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.NumberCell > div > i {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 768px){
+    .NumberCell {
+        width: 100%;
+       
+    }
+    .NumberCell div:nth-child(1){
+        margin-bottom: 15px; 
+    }
+}
